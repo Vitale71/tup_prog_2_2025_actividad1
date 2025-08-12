@@ -12,7 +12,7 @@ namespace Ejercicio1
         {
             Rectangulo objeto2 = new Rectangulo(2, 4);
             Ortoedro objeto3 = new Ortoedro(7, 7, 21);
-            Cuadrado objeto4 = new Cuadrado(6);
+            Cuadrado objeto4 = new Cuadrado(3);
             Cubo objeto5 = new Cubo(6);
 
             string resultado = "[\n" +
