@@ -34,7 +34,19 @@ namespace Ejercicio1.Models
 
         public double CalcularVolumen()
         {
-            return 
+            return tapas[0].calcularArea() * lado.largo;
+        }
+
+        public string Describir()
+        {
+            string json = $@"{{
+                ""Figura"": ""Cilindro"",
+                ""Tapas"": {tapas[0].circunferencia},
+                ""Lado"": {lado.largo},
+                ""Área"": {this.CalcularArea()},
+                ""Volumen"": {this.CalcularVolumen()}
+            }}";
+            return json;
         }
     }
 }
